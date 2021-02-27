@@ -12,9 +12,9 @@ namespace JurosSimEComp.Juros
         public double Capital { get; set; }
         public double TaxaDeJuros { get; set; }
         public int Tempo { get; set; }
-        public double MontanteFinal { get; set; }
+        public double MontanteFinal { get; set; } //Atribtos
 
-        public JurosSimples(double capital, double taxaDeJuros, int tempo)
+        public JurosSimples(double capital, double taxaDeJuros, int tempo) //Construtor
         {
             Capital = capital;
             TaxaDeJuros = taxaDeJuros;

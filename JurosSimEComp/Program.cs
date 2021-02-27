@@ -14,8 +14,6 @@ namespace JurosSimEComp
         {
             try
             {
-
-
                 Console.WriteLine("Sistema que calcula juros simples e juros compostos");
                 Console.WriteLine();
                 Console.WriteLine("ATENÇÃO: O APLICATIVO TRABALHA COM JUROS AO MES, E TEMPO EM MESES!");

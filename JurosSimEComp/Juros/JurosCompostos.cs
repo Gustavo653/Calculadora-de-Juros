@@ -12,9 +12,9 @@ namespace JurosSimEComp.Juros
         public double Capital { get; set; }
         public double TaxaDeJuros { get; set; }
         public int Tempo { get; set; }
-        public double MontanteFinal { get; set; }
+        public double MontanteFinal { get; set; } //Atributos
 
-        public JurosCompostos(double capital, double taxaDeJuros, int tempo)
+        public JurosCompostos(double capital, double taxaDeJuros, int tempo) //Construtor
         {
             Capital = capital;
             TaxaDeJuros = taxaDeJuros;
@@ -30,8 +30,7 @@ namespace JurosSimEComp.Juros
 
         public double CalcularMontante(double capital, double taxaDeJuros, int tempo)
         {
-            taxaDeJuros += 1;
-            MontanteFinal = (Capital * Math.Pow(taxaDeJuros, tempo)) / 1000000;
+            MontanteFinal = (Capital * Math.Pow(1 + taxaDeJuros, tempo)) / 1000000;
             return MontanteFinal;
         }
     }
