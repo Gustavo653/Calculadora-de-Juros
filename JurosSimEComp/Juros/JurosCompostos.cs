@@ -23,14 +23,14 @@ namespace JurosSimEComp.Juros
 
         public double CalcularJuros(double capital, double taxaDeJuros, int tempo)
         {
-            MontanteFinal = (Capital * Math.Pow(1 + taxaDeJuros, tempo)) / 1000000;
-            double juros = MontanteFinal - Capital;
-            return juros;
+            MontanteFinal = (Capital * Math.Pow(1 + TaxaDeJuros, Tempo)) / 1000000;
+            return MontanteFinal;
         }
 
         public double CalcularMontante(double capital, double taxaDeJuros, int tempo)
         {
-            MontanteFinal = (Capital * Math.Pow(1 + taxaDeJuros, tempo)) / 1000000;
+            MontanteFinal = (Capital * Math.Pow(1 + TaxaDeJuros, Tempo)) / 1000000;
+            MontanteFinal += Capital;
             return MontanteFinal;
         }
     }
